@@ -24,3 +24,4 @@ Route::get('list', [ApiController::class, 'index'])->name('list');
 Route::get('show/{id}', [ApiController::class, 'show'])->name('show');
 Route::post('create', [ApiController::class, 'create'])->name('create');
 Route::delete('destroy/{id}', [ApiController::class,'destroy'])->name('destroy');
+Route::put('update/{id}',[ApiController::class,'update'])->name('update');
